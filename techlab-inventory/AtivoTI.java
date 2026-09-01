@@ -2,23 +2,23 @@
 //import AtivoTI.java;
 
 public class AtivoTI {
-    private String id;
+    private int id;
     private String codigoPatrimonio;
     private String modelo;
     private String status;
 
     //construtor
-    public AtivoTI(String id, String codigoPatrimonio, String modelo, String status){
+    public AtivoTI(int id, String codigoPatrimonio, String modelo, String status){
         this.id = id;
         this.codigoPatrimonio = codigoPatrimonio;
         this.modelo = modelo;
         this.status = status;
     }
     //Getter e Setters
-    public String getID(){
+    public int getID(){
         return id;
     }
-    public void setID(String id){
+    public void setID(int id){
         this.id = id;
     }
 
