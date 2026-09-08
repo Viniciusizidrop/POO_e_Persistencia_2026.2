@@ -34,7 +34,7 @@ public class ChamadoSuporte {
     private String prioridade;
     private AtivoTI ativoRelacionado;
 
-    public ChamadoSuporte(int id, String descricao, String prioridade, AtivoTi ativoRelacionado) {
+    public ChamadoSuporte(int id, String descricao, String prioridade, AtivoTI ativoRelacionado) {
     this.id = id;
     this.descricao = descricao;
     this.prioridade = prioridade;
@@ -44,6 +44,10 @@ public class ChamadoSuporte {
     public AtivoTI getAtivoRelacionado(){
         return this.ativoRelacionado;
     }
+
+    //aula5 
+    /*public void emManutencao(AtivoTI){
+    Setstatus("Em Manutenção")}*/
 
     //representação textual
     @Override
@@ -56,8 +60,5 @@ public class ChamadoSuporte {
         "--------------------------------------------------------\n";
 
     }
-
-
-
 
 }
