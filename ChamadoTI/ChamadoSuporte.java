@@ -28,7 +28,7 @@
 }*/
 
 //aula4
-public class ChamadoSuporte {
+/*public class ChamadoSuporte {
     private int id;
     private String descricao;
     private String prioridade;
@@ -46,8 +46,8 @@ public class ChamadoSuporte {
     }
 
     //aula5 
-    /*public void emManutencao(AtivoTI){
-    Setstatus("Em Manutenção")}*/
+    //public void emManutencao(AtivoTI){
+    //Setstatus("Em Manutenção")
 
     //representação textual
     @Override
@@ -61,4 +61,41 @@ public class ChamadoSuporte {
 
     }
 
+}*/
+
+//aula6
+public class ChamadoSuporte implements INotificavel{
+    private int id;
+    private String descricao;
+    private String prioridade;
+    private AtivoTI ativoRelacionado;
+
+    public ChamadoSuporte(int id, String descricao, String prioridade, AtivoTI ativoRelacionado) {
+    this.id = id;
+    this.descricao = descricao;
+    this.prioridade = prioridade;
+    this.ativoRelacionado = ativoRelacionado; 
+    }
+
+    public AtivoTI getAtivoRelacionado(){
+        return this.ativoRelacionado;
+    }
+
+
+    //representação textual
+    @Override
+    public String toString(){
+        return "--------------------------------------------------------\n" + 
+        "Chamado: " + this.id + "\n" + 
+        "Descrição: " + this.descricao + "\n" +
+        "Prioridade: " + this.prioridade + "\n" +
+        "Equipamento Relacionado: " + this.ativoRelacionado + "\n" +
+        "--------------------------------------------------------\n";
+
+    }
+
+    @Override
+    public void enviarAlerta(String mensagem){
+        System.out.println("[SISTEMA DE ALERTA]:" + mensagem);
+    } 
 }

@@ -78,7 +78,40 @@
 }*/
 
 //aula5
-public class AtivoTI{
+/*public class AtivoTI{
+    //atributos
+    protected  int id;
+    protected String patrimonio;
+    protected  String modelo;
+    protected String status;
+
+
+    //Construtor
+    public AtivoTI(int id, String patrimonio, String modelo, String Status){
+        this.id = id;
+        this.patrimonio = patrimonio;
+        this.modelo = modelo;
+        this.status = status;
+    }
+
+    //getters e setters
+    public int getId(){return id;}
+    public String getPatrimonio(){return patrimonio;}
+    public String getModelo(){return modelo;}
+    public String getStatus(){return status;}
+    public void setPatrimonio(String patrimonio){this.patrimonio = patrimonio;}
+    public void setModelo(String modelo){this.modelo = modelo;}
+    public void setStatus(String status){this.status = status;}
+
+    //Representação
+    @Override 
+    public String toString(){
+        return "Id: "+id+"  | Pat: " +patrimonio+"  | Modelo:  "+modelo+"  | status:  "+status;
+    }
+}*/
+
+//aula6
+public abstract class AtivoTI{
     //atributos
     protected  int id;
     protected String patrimonio;
@@ -109,6 +142,9 @@ public class AtivoTI{
         return "Id: "+id+"  | Pat: " +patrimonio+"  | Modelo:  "+modelo+"  | status:  "+status;
     }
 
+    //aula6
+    //Método abstrato define oque fazer, mais não como.
+    public abstract double calcularCustoManutencaoMensal();
+    }
 
-}
 
