@@ -324,4 +324,6 @@ try {
 } 
 //cat ExemploConexao.java
 
-
+//para rodar
+//javac -cp ".:sqlite-jdbc.jar" ConexaoBanco.java AtivoTI.java AtivoDAO.java ChamadoSuporte.java ChamadoDAO.java Main.java
+//java -cp ".:sqlite-jdbc.jar" Main
